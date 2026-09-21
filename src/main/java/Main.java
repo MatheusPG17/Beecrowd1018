@@ -4,9 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
+        //variaveis
         int Cent01, cent05, cent010, cent025, cent050, um, dois, cinco, dez, vinte, cinquenta, cem;
         double valor;
-        
+        //entrada de dados
         valor = leia.nextDouble();
         
         System.out.println("NOTAS");
@@ -14,6 +15,7 @@ public class Main {
         //gambiarra a seguir na proxima linha <3
         valor = valor + 0.00001;
         
+        //Processamento
         cem = (int)(valor/100);
         valor = valor % 100;
         
@@ -48,7 +50,8 @@ public class Main {
         valor =  valor % 0.05;
         
         Cent01 = (int) (valor/0.01);
-         
+        
+         //saida de dados
         System.out.println(cem + " nota(s) de R$ 100,00");
         System.out.println(cinquenta + " nota(s) de R$ 50,00");
         System.out.println(vinte + " nota(s) de R$ 20,00");
